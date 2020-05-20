@@ -1,0 +1,122 @@
+@import "./scss/fontawesome.scss";
+@import "./scss/solid.scss";
+//Colours 
+
+    //Background Colours 
+
+$leftcolumn: rgb(92, 102, 116);
+$rightcolumn: rgb(222, 223, 226);
+$maincontainer: rgb(249, 249, 249);
+$bottomrow: rgb(246, 246, 246);
+
+
+    //text colours 
+
+$lefttext: rgb(224, 224, 224);
+// Spacing
+
+$padding-xs  : 5px;
+$padding-sm  : 10px;
+$padding     : 15px;
+$padding-lg  : 30px;
+$padding-xl  : 60px;
+
+$margin-xs  : 5px;
+$margin-sm  : 10px;
+$margin     : 15px;
+$margin-lg  : 30px;
+$margin-xl  : 60px;
+
+// Borders
+
+$border-radius: 15px;
+$img-radius: 50%;
+
+
+// Font-sizes
+
+$x-small: 11px;
+$small: 14px;
+$medium: 16px;
+$large: 20px;
+$x-large: 24px;
+$xx-large: 36px;
+$xxx-large: 52px;
+
+//column css 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+  }
+
+
+
+
+// Font Theme CSS
+body, html{
+    font-family: 'Open Sans', sans-serif;
+    //overflow: hidden;
+    height: 100%;
+    margin: 0%;
+}
+
+//left-column css
+#left-column{
+
+    &{
+    background-color: $leftcolumn;
+    color: rgb(224, 224, 224);
+    max-width: 273px;
+    height: 100%;
+    border-bottom: 1px solid $maincontainer;
+    }
+
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    width: 157px;
+    height: 47px;
+    padding-top: $padding-xs;
+    text-align: center;
+}
+
+.round-img1{
+    border-radius: $img-radius;
+    max-width: 42px;
+    max-height: 42px;
+    
+}
+
+.user{
+   padding: 25px;
+}
+
+
+#user-name{
+    padding: $padding-sm;
+    display: inline-block;
+    text-align: center;
+}
+
+#user-menu{
+    @extend %fa-icon;
+    @extend .fas;
+
+    &:before{
+        content: fa-content($fa-var-angle-down);
+    }
+}
