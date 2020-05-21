@@ -6013,59 +6013,8 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-.col-1 {
-  width: 8.33%;
-}
-
-.col-2 {
-  width: 16.66%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33%;
-}
-
-.col-5 {
-  width: 41.66%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33%;
-}
-
-.col-8 {
-  width: 66.66%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33%;
-}
-
-.col-11 {
-  width: 91.66%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-[class*=col-] {
-  float: left;
-}
-
-body, html {
+body,
+html {
   font-family: "Open Sans", sans-serif;
   height: 100%;
   margin: 0%;
@@ -6081,31 +6030,35 @@ body, html {
 
 .logo {
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 157px;
   height: 47px;
   padding-top: 5px;
-  text-align: center;
+  padding-right: 15px;
 }
 
 .round-img1 {
   border-radius: 50%;
-  max-width: 42px;
   max-height: 42px;
+  max-width: 42px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.user {
-  padding: 25px;
+#user-menu {
+  font-size: 20px;
+  line-height: 2.2;
+  float: right;
+  height: 42px;
 }
-
-#user-name {
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-}
-
 #user-menu:before {
   content: "";
+}
+
+.user-menu:hover {
+  background-color: #e0e0e0;
 }
 
 /*# sourceMappingURL=lighttheme.css.map */

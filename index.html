@@ -11,30 +11,51 @@
 </head>
 
 <body>
-    <div id="left-column">
+    <div class="col-2" id="left-column">
         <div class="row">
-            <div class="logo">
+            <div class="col-12">
                 <img class="logo" src="images/Spotify_Logo_RGB_Green.png" alt="Spotify RGB Green Logo">
             </div>
         </div>
-        <div class="row">
-            <div class="user">
+        <div class="user-menu row m-3">
+            <div class="col-4">
+                <img class="round-img1" src="images/profilepicture.jpg" alt="Profile Image">
+            </div>
+            <div class="col-4 flex-column my-auto">Calvin</div>
 
-                <div class="col-4">
-                    <img class="round-img1" src="images/profilepicture.jpg" alt="Profile Image">
-                </div>
-                <div class="col-4">
-                    <div id="user-name">
-                        Calvin
-                    </div>
-                </div>
-                <div id="col-4">
-                    <i class="fas fa-angle-down"></i>
-                </div>
-
-
+            <div class="col-4 my-auto">
+                <i class="fas fa-angle-down" id="user-menu"></i>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <i class="fas fa-home" id="icons"></i>
+                <div class="left-col-text">Home</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <i class="fas fa-eye" id="icons"></i>
+                <div class="left-col-text">Browse</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <i class="fas fa-broadcast-tower" id="Radio"></i>
+                <div class="left-col-text">Radio</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="left-col-text">Your library</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="left-col-text">Playlists</div>
+            </div>
+        </div>
+    </div>
 
     </div>
     <section id="main-container">
@@ -47,8 +68,17 @@
 
     </section>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
