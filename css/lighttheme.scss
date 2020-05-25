@@ -13,6 +13,7 @@ $bottomrow: rgb(246, 246, 246);
 
 $lefttext: rgb(224, 224, 224);
 // Spacing
+$spacer: 19px;
 
 $padding-xs: 5px;
 $padding-sm: 10px;
@@ -81,7 +82,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     
-
+    
 }
 
 
@@ -101,4 +102,28 @@ html {
 
 .user-menu:hover{
     background-color: $lefttext;
+}
+
+.side-btn{
+    display: flex;
+    padding-top: 35px;
+    padding-left: ($spacer * 3 + 10px);
+}
+
+.init-spacing{
+    padding-top: ($spacer * 2);
+}
+
+.left-col-text{
+    padding-left: 19px;
+    font-size: 14px;
+    
+}
+
+.side-icon{
+    float: left;
+    font-size: 28px;
+    line-height: .7;
+    max-width: 30px;
+    max-height: 23px;
 }

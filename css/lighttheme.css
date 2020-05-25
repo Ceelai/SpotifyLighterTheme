@@ -6061,4 +6061,27 @@ html {
   background-color: #e0e0e0;
 }
 
+.side-btn {
+  display: flex;
+  padding-top: 35px;
+  padding-left: 67px;
+}
+
+.init-spacing {
+  padding-top: 38px;
+}
+
+.left-col-text {
+  padding-left: 19px;
+  font-size: 14px;
+}
+
+.side-icon {
+  float: left;
+  font-size: 28px;
+  line-height: 0.7;
+  max-width: 30px;
+  max-height: 23px;
+}
+
 /*# sourceMappingURL=lighttheme.css.map */
