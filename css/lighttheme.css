@@ -6072,7 +6072,7 @@ html {
 }
 
 .left-col-text {
-  padding-left: 19px;
+  padding-left: 20px;
   font-size: 14px;
 }
 
@@ -6082,6 +6082,14 @@ html {
   line-height: 0.7;
   max-width: 30px;
   max-height: 23px;
+}
+
+.list-spacing-1 {
+  padding-top: 55px;
+}
+
+.list-spacing-2 {
+  padding-top: 255px;
 }
 
 /*# sourceMappingURL=lighttheme.css.map */
