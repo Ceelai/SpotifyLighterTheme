@@ -7,6 +7,7 @@
     <title>Calvin Lai - Spotify Lighter Theme</title>
     <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.css">
     <link rel="stylesheet" href="css/lighttheme.css">
 </head>
 
@@ -30,29 +31,34 @@
         <div class="row ml-3">
             <div class="col-12 side-btn init-spacing">
                 <i class="fas fa-home side-icon" id="icons"></i>
-                <div class="left-col-text">Home</div>
+                <div class="left-col-text"><a href="#" class="click-icon">Home</a></div>
             </div>
         </div>
         <div class="row ml-3">
             <div class="col-12 side-btn">
                 <i class="fas fa-eye side-icon" id="icons"></i>
-                <div class="left-col-text">Browse</div>
+                <div class="left-col-text"><a href="#" class="click-icon">Browse</a></div>
             </div>
         </div>
         <div class="row ml-3">
             <div class="col-12 side-btn">
                 <i class="fas fa-broadcast-tower side-icon" id="Radio"></i>
-                <div class="left-col-text">Radio</div>
+                <div class="left-col-text"><a href="#" class="click-icon">Radio</a></div>
             </div>
         </div>
         <div class="row  ml-3">
             <div class="col-12 list-spacing-1">
-                <div class="">Your library</div>
+                <div class="list">Your library</div>
             </div>
         </div>
         <div class="row  ml-3">
             <div class="col-12 list-spacing-2">
-                <div class="">Playlists</div>
+                <div class="list">Playlists</div>
+            </div>
+        </div>
+        <div class="row ml-3 align-items-center">
+            <i class="fas fa-volume-up volume-icon" id="Volume"></i>
+            <div id="song-volume">
             </div>
         </div>
     </div>
@@ -79,6 +85,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

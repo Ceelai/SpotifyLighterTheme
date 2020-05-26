@@ -6073,7 +6073,11 @@ html {
 
 .left-col-text {
   padding-left: 20px;
-  font-size: 14px;
+  font-size: 16px;
+}
+.left-col-text .click-icon {
+  text-decoration: none;
+  color: #e0e0e0;
 }
 
 .side-icon {
@@ -6084,12 +6088,49 @@ html {
   max-height: 23px;
 }
 
+.list {
+  font-size: 22px;
+}
+
 .list-spacing-1 {
   padding-top: 55px;
 }
 
 .list-spacing-2 {
   padding-top: 255px;
+}
+
+.volume-icon {
+  font-size: 28px/2;
+  display: flex;
+  padding-right: 25px;
+  align-items: center;
+  line-height: 1;
+}
+
+#song-volume {
+  border: none;
+  height: 9px;
+  width: 174px;
+}
+#song-volume .noUi-base {
+  background: #e0e0e0;
+  border-radius: 15px;
+}
+#song-volume .noUi-handle {
+  background: #e0e0e0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: none;
+  left: 0;
+  display: none;
+}
+#song-volume .noUi-handle:before, #song-volume .noUi-handle::after {
+  background: none;
+}
+#song-volume:hover .noUi-handle {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=lighttheme.css.map */

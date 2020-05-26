@@ -1,5 +1,7 @@
 @import "./scss/fontawesome.scss";
 @import "./scss/solid.scss";
+
+
 //Colours
 
 //Background Colours
@@ -115,9 +117,15 @@ html {
 
 .left-col-text{
     padding-left: 20px;
-    font-size: 14px;
+    font-size: 16px;
     
+    .click-icon{
+        text-decoration: none;
+        color: $lefttext;
+    }
 }
+
+
 
 .side-icon{
     float: left;
@@ -127,10 +135,57 @@ html {
     max-height: 23px;
 }
 
+.list{
+    font-size: 22px;
+}
+
 .list-spacing-1{
     padding-top: 55px;
 }
 
 .list-spacing-2{
     padding-top: 255px;
+}
+
+.volume-icon{
+    font-size: 28px / 2;
+    display: flex;
+    padding-right: $padding + 10px;
+    align-items: center;
+    line-height: 1;
+
+}
+
+#song-volume{
+    border: none;
+    height: 9px;
+    width: 174px;
+    
+    .noUi-base{
+        background: $lefttext;
+        border-radius: $border-radius;
+    }
+
+    .noUi-handle{
+        background: $lefttext;
+        width: 15px;
+        height: 15px;
+        
+        border-radius: 50%;
+        box-shadow: none;
+        left: 0;
+        display: none;
+
+        &:before, &::after{
+            background: none;
+        }
+    }
+
+    &:hover{
+        .noUi-handle{
+            
+            display: inline-block;
+        }
+    }
+
 }
