@@ -6100,8 +6100,18 @@ html {
   padding-top: 255px;
 }
 
+.volume {
+  position: absolute;
+  left: 0;
+  bottom: 56px;
+  display: inline-flex !important;
+  height: auto;
+  float: none;
+}
+
 .volume-icon {
-  font-size: 28px/2;
+  font-size: 24px;
+  padding-left: 10px;
   display: flex;
   padding-right: 25px;
   align-items: center;
@@ -6109,24 +6119,31 @@ html {
 }
 
 #song-volume {
-  border: none;
   height: 9px;
   width: 174px;
 }
+#song-volume .noUi-target {
+  box-shadow: none !important;
+  background: none !important;
+}
 #song-volume .noUi-base {
-  background: #e0e0e0;
   border-radius: 15px;
+  background-color: #5c6674;
+  border: none;
+}
+#song-volume .noUi-connect {
+  background-color: #e0e0e0;
 }
 #song-volume .noUi-handle {
-  background: #e0e0e0;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+  border-radius: 15px;
+  background-color: #e0e0e0;
   box-shadow: none;
-  left: 0;
   display: none;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
 }
-#song-volume .noUi-handle:before, #song-volume .noUi-handle::after {
+#song-volume .noUi-handle::before, #song-volume .noUi-handle::after {
   background: none;
 }
 #song-volume:hover .noUi-handle {

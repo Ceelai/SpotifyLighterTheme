@@ -10,6 +10,7 @@ $leftcolumn: rgb(92, 102, 116);
 $rightcolumn: rgb(222, 223, 226);
 $maincontainer: rgb(249, 249, 249);
 $bottomrow: rgb(246, 246, 246);
+$spotifygreen: rgb(30, 215, 96);
 
 //text colours
 
@@ -147,8 +148,17 @@ html {
     padding-top: 255px;
 }
 
+.volume{
+    position: absolute;
+    left: 0;
+    bottom: 56px;
+    display: inline-flex !important;
+    height: auto;
+    float: none; 
+}
 .volume-icon{
-    font-size: 28px / 2;
+    font-size: 24px;
+    padding-left: 10px;
     display: flex;
     padding-right: $padding + 10px;
     align-items: center;
@@ -157,30 +167,40 @@ html {
 }
 
 #song-volume{
-    border: none;
     height: 9px;
     width: 174px;
     
+    .noUi-target{
+        box-shadow: none !important;
+        background: none !important;
+    }
+
     .noUi-base{
-        background: $lefttext;
-        border-radius: $border-radius;
-    }
-
-    .noUi-handle{
-        background: $lefttext;
-        width: 15px;
-        height: 15px;
         
-        border-radius: 50%;
-        box-shadow: none;
-        left: 0;
-        display: none;
-
-        &:before, &::after{
-            background: none;
-        }
+        border-radius: $border-radius;
+        background-color: $leftcolumn;
+        border: none;
     }
 
+
+    .noUi-connect{
+        background-color: $lefttext;
+    }
+
+   .noUi-handle{
+       border-radius: $border-radius;
+       background-color: $lefttext;
+       box-shadow: none;
+       display: none;
+       width: 20px;
+       height: 20px;
+       text-decoration: none;
+
+       &::before, &::after{
+           background: none;
+       }
+   } 
+   
     &:hover{
         .noUi-handle{
             
@@ -189,3 +209,11 @@ html {
     }
 
 }
+
+//end of left column css 
+
+//start of right column css 
+
+
+
+//end of right column css 
