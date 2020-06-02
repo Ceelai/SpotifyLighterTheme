@@ -6020,11 +6020,20 @@ html {
   margin: 0%;
 }
 
+.container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-height: 100% !important;
+}
+
 #left-column {
+  max-width: 273px !important;
+  height: 100vh !important;
   background-color: #5c6674;
   color: #e0e0e0;
-  max-width: 273px;
-  height: 100%;
+  max-height: 100% !important;
   border-bottom: 1px solid #f9f9f9;
 }
 
@@ -6042,19 +6051,21 @@ html {
   border-radius: 50%;
   max-height: 42px;
   max-width: 42px;
-  display: block;
+  display: initial;
   margin-left: auto;
   margin-right: auto;
 }
 
 #user-menu {
   font-size: 20px;
-  line-height: 2.2;
-  float: right;
   height: 42px;
 }
 #user-menu:before {
   content: "";
+}
+
+#user-css {
+  display: inline;
 }
 
 .user-menu:hover {
@@ -6072,7 +6083,6 @@ html {
 }
 
 .left-col-text {
-  padding-left: 20px;
   font-size: 16px;
 }
 .left-col-text .click-icon {
@@ -6081,46 +6091,26 @@ html {
 }
 
 .side-icon {
-  float: left;
   font-size: 28px;
-  line-height: 0.7;
   max-width: 30px;
   max-height: 23px;
 }
 
 .list {
   font-size: 22px;
-}
-
-.list-spacing-1 {
-  padding-top: 55px;
-}
-
-.list-spacing-2 {
-  padding-top: 255px;
-}
-
-.volume {
-  position: absolute;
-  left: 0;
-  bottom: 56px;
-  display: inline-flex !important;
-  height: auto;
-  float: none;
+  max-height: 100vh/2;
 }
 
 .volume-icon {
-  font-size: 24px;
-  padding-left: 10px;
+  font-size: 20px;
   display: flex;
-  padding-right: 25px;
-  align-items: center;
+  align-items: left;
   line-height: 1;
 }
 
 #song-volume {
   height: 9px;
-  width: 174px;
+  width: auto;
 }
 #song-volume .noUi-target {
   box-shadow: none !important;
@@ -6148,6 +6138,34 @@ html {
 }
 #song-volume:hover .noUi-handle {
   display: inline-block;
+}
+
+#main-container {
+  background-color: grey;
+  height: 100vh !important;
+  width: 1372px !important;
+  max-width: 1372px !important;
+}
+
+#arrows {
+  font-size: 40px;
+}
+
+.flo-left {
+  float: left;
+}
+
+.flo-right {
+  float: right;
+}
+
+#right-column {
+  height: 100vh !important;
+  max-width: 273px !important;
+  background-color: #dedfe2;
+  color: #e0e0e0;
+  max-height: 100% !important;
+  border-bottom: 1px solid #f9f9f9;
 }
 
 /*# sourceMappingURL=lighttheme.css.map */

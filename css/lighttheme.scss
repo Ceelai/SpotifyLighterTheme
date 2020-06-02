@@ -1,7 +1,6 @@
 @import "./scss/fontawesome.scss";
 @import "./scss/solid.scss";
 
-
 //Colours
 
 //Background Colours
@@ -15,6 +14,8 @@ $spotifygreen: rgb(30, 215, 96);
 //text colours
 
 $lefttext: rgb(224, 224, 224);
+$maintext: rgb(77, 77, 77);
+$righttext: rgb(77, 77, 77);
 // Spacing
 $spacer: 19px;
 
@@ -45,8 +46,6 @@ $x-large: 24px;
 $xx-large: 36px;
 $xxx-large: 52px;
 
-
-
 // Font Theme CSS
 body,
 html {
@@ -56,15 +55,21 @@ html {
     margin: 0%;
 }
 
+.container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-height: 100% !important;
+}
 //left-column css
 #left-column {
-    & {
-        background-color: $leftcolumn;
-        color: rgb(224, 224, 224);
-        max-width: 273px;
-        height: 100%;
-        border-bottom: 1px solid $maincontainer;
-    }
+    max-width: 273px !important;
+    height: 100vh !important;
+    background-color: $leftcolumn;
+    color: rgb(224, 224, 224);
+    max-height: 100% !important;
+    border-bottom: 1px solid $maincontainer;
 }
 
 .logo {
@@ -81,12 +86,10 @@ html {
     border-radius: $img-radius;
     max-height: 42px;
     max-width: 42px;
-    display: block;
+    display: initial;
     margin-left: auto;
     margin-right: auto;
-    
 }
-
 
 #user-menu {
     @extend %fa-icon;
@@ -95,125 +98,134 @@ html {
     &:before {
         content: fa-content($fa-var-angle-down);
     }
-    
+
     font-size: 20px;
-    line-height: 2.2;
-    float: right;
+    //line-height: 2.2;
+    //float: right;
     height: 42px;
 }
 
-.user-menu:hover{
+#user-css {
+    display: inline;
+}
+
+.user-menu:hover {
     background-color: $lefttext;
 }
 
-.side-btn{
+.side-btn {
     display: flex;
     padding-top: 35px;
     padding-left: ($spacer * 3 + 10px);
 }
 
-.init-spacing{
+.init-spacing {
     padding-top: ($spacer * 2);
 }
 
-.left-col-text{
-    padding-left: 20px;
+.left-col-text {
     font-size: 16px;
-    
-    .click-icon{
+
+    .click-icon {
         text-decoration: none;
         color: $lefttext;
     }
 }
 
-
-
-.side-icon{
-    float: left;
+.side-icon {
     font-size: 28px;
-    line-height: .7;
+    //line-height: 0.7;
     max-width: 30px;
     max-height: 23px;
 }
 
-.list{
+.list {
     font-size: 22px;
+    max-height: 100vh / 2;
 }
 
-.list-spacing-1{
-    padding-top: 55px;
-}
-
-.list-spacing-2{
-    padding-top: 255px;
-}
-
-.volume{
-    position: absolute;
-    left: 0;
-    bottom: 56px;
-    display: inline-flex !important;
-    height: auto;
-    float: none; 
-}
-.volume-icon{
-    font-size: 24px;
-    padding-left: 10px;
+.volume-icon {
+    font-size: 20px;
     display: flex;
-    padding-right: $padding + 10px;
-    align-items: center;
+    align-items: left;
     line-height: 1;
-
 }
 
-#song-volume{
+#song-volume {
     height: 9px;
-    width: 174px;
-    
-    .noUi-target{
+    width: auto;
+
+    .noUi-target {
         box-shadow: none !important;
         background: none !important;
     }
 
-    .noUi-base{
-        
+    .noUi-base {
         border-radius: $border-radius;
         background-color: $leftcolumn;
         border: none;
     }
 
-
-    .noUi-connect{
+    .noUi-connect {
         background-color: $lefttext;
     }
 
-   .noUi-handle{
-       border-radius: $border-radius;
-       background-color: $lefttext;
-       box-shadow: none;
-       display: none;
-       width: 20px;
-       height: 20px;
-       text-decoration: none;
+    .noUi-handle {
+        border-radius: $border-radius;
+        background-color: $lefttext;
+        box-shadow: none;
+        display: none;
+        width: 20px;
+        height: 20px;
+        text-decoration: none;
 
-       &::before, &::after{
-           background: none;
-       }
-   } 
-   
-    &:hover{
-        .noUi-handle{
-            
-            display: inline-block;
+        &::before,
+        &::after {
+            background: none;
         }
     }
 
+    &:hover {
+        .noUi-handle {
+            display: inline-block;
+        }
+    }
 }
 
-//end of left column css 
+//end of left column css
 
-//start of right column css 
+//start of main container css
+#main-container {
+    background-color: grey;
+    height: 100vh !important;
+    width: 1372px !important;
+    max-width: 1372px !important;
+}
 
+#arrows {
+    font-size: 40px;
+}
 
+.flo-left {
+    float: left;
+}
 
-//end of right column css 
+.flo-right {
+    float: right;
+}
+
+//end of main container css
+
+//start of right column css
+#right-column {
+    //change colours to actual
+    height: 100vh !important;
+    max-width: 273px !important;
+    background-color: $rightcolumn;
+ 
+    color: rgb(224, 224, 224);
+    max-height: 100% !important;
+    border-bottom: 1px solid $maincontainer;
+}
+
+//end of right column css

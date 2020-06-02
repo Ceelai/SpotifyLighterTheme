@@ -13,85 +13,79 @@
 
 <body>
 
-    <div class="col-2" id="left-column">
+    <div class="container h-100 w-100">
         <div class="row">
-            <div class="col-12">
+            <div class="col-3 pt-2" id="left-column">
                 <img class="logo" src="images/Spotify_Logo_RGB_Green.png" alt="Spotify RGB Green Logo">
+                <div class="col-12 pt-4 text-center">
+                    <div class="row mx-auto">
+                        <div class="col-4">
+                            <img class="round-img1" src="images/profilepicture.jpg" alt="Profile Image">
+                        </div>
+                        <div class="col-4">
+                            <div id="user-css" class="">Calvin</div>
+                        </div>
+                        <div class="col-4">
+                            <i class="fas fa-angle-down" id="user-menu user-css"></i>
+                        </div>
+                    </div>
+                    <div class="row pt-4 text-left mx-auto">
+                        <div class="col-6 text-center">
+                            <i class="fas fa-home side-icon" id="icons"></i>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="left-col-text"><a href="#" class="click-icon">Home</a></div>
+                        </div>
+                    </div>
+                    <div class="row pt-4 text-left mx-auto">
+                        <div class="col-6 text-center">
+                            <i class="fas fa-eye side-icon" id="icons"></i>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="left-col-text"><a href="#" class="click-icon">Browse</a></div>
+                        </div>
+                    </div>
+                    <div class="row pt-4 text-left mx-auto">
+                        <div class="col-6 text-center">
+                            <i class="fas fa-broadcast-tower side-icon" id="Radio"></i>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="left-col-text"><a href="#" class="click-icon">Radio</a></div>
+                        </div>
+                    </div>
+                    <div class="row pt-4 text-left mx-auto">
+                        <div class="col-12 list">Your Library</div>
+                    </div>
+                    <div class="row pt-4 text-left mx-auto">
+                        <div class="col-12 list">Playlists</div>
+                    </div>
+                    <div class="row pt-4 text-left mx-auto">
+                        <div class="col-2">
+                            <i class="fas fa-volume-up volume-icon" id="Volume"></i>
+                        </div>
+                        <div class="col-10 text-center">
+                            <div id="song-volume"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="user-menu row m-3">
-            <div class="col-4">
-                <img class="round-img1" src="images/profilepicture.jpg" alt="Profile Image">
+            <div class="col-6 h-100 w-100" id="main-container">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fas fa-angle-left flo-left pt-2" id="arrows"></i>
+                        <i class="fas fa-angle-right flo-right pt-2" id="arrows"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 flex-column my-auto">Calvin</div>
+            <div class="col-3 pt-2 h-100 w-100" id="right-column">
+                <div class="row">
 
-            <div class="col-4 my-auto">
-                <i class="fas fa-angle-down" id="user-menu"></i>
+                </div>
             </div>
-        </div>
-        <div class="row ml-3">
-            <div class="col-12 side-btn init-spacing">
-                <i class="fas fa-home side-icon" id="icons"></i>
-                <div class="left-col-text"><a href="#" class="click-icon">Home</a></div>
-            </div>
-        </div>
-        <div class="row ml-3">
-            <div class="col-12 side-btn">
-                <i class="fas fa-eye side-icon" id="icons"></i>
-                <div class="left-col-text"><a href="#" class="click-icon">Browse</a></div>
-            </div>
-        </div>
-        <div class="row ml-3">
-            <div class="col-12 side-btn">
-                <i class="fas fa-broadcast-tower side-icon" id="Radio"></i>
-                <div class="left-col-text"><a href="#" class="click-icon">Radio</a></div>
-            </div>
-        </div>
-        <div class="row  ml-3">
-            <div class="col-12 list-spacing-1">
-                <div class="list">Your library</div>
-            </div>
-        </div>
-        <div class="row  ml-3">
-            <div class="col-12 list-spacing-2">
-                <div class="list">Playlists</div>
-            </div>
-        </div>
-        <div class="row ml-2 volume align-items-center">
-            <i class="fas fa-volume-up volume-icon" id="Volume"></i>
-            <div id="song-volume">
-            </div>
+            
         </div>
     </div>
 
-
-    <div class="col-8" id="main-container">
-        <div class="row">
-            <div class="col-2">
-
-            </div>
-            <div class="col-12">
-
-            </div>
-        </div>
-        <div id="main-area" class="row">
-            <div class="col-12">
-
-            </div>
-        </div>
-        <div id="bottom-row" class="row">
-            <div class="col-6">
-
-            </div>
-            <div class="col-6">
-
-            </div>
-        </div>
-    </div>
-    
-    
-
-    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
