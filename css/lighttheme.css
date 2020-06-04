@@ -6026,6 +6026,7 @@ html {
   padding-left: 0 !important;
   padding-right: 0 !important;
   max-height: 100% !important;
+  max-width: 90% !important;
 }
 
 #left-column {
@@ -6141,10 +6142,11 @@ html {
 }
 
 #main-container {
-  background-color: grey;
+  background-color: #f9f9f9;
   height: 100vh !important;
   width: 1372px !important;
-  max-width: 1372px !important;
+  max-width: 80% !important;
+  color: #4d4d4d;
 }
 
 #arrows {
@@ -6157,6 +6159,35 @@ html {
 
 .flo-right {
   float: right;
+}
+
+#search-icon {
+  font-size: 14px;
+}
+
+.input-group {
+  border-bottom: 3px solid #1ed760;
+  border-left: 3px solid #1ed760;
+  border-right: 3px solid #1ed760;
+  background-color: #f9f9f9;
+}
+
+input[type=text] {
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #f9f9f9;
+  border-radius: 0;
+  border: none;
+  color: #4d4d4d;
+}
+
+.input-group-text {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  font-weight: 300;
+  border: none !important;
+  background-color: #f9f9f9 !important;
+  color: #4d4d4d;
 }
 
 #right-column {

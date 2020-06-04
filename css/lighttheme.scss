@@ -61,6 +61,7 @@ html {
     padding-left: 0 !important;
     padding-right: 0 !important;
     max-height: 100% !important;
+    max-width: 90% !important;
 }
 //left-column css
 #left-column {
@@ -196,10 +197,11 @@ html {
 
 //start of main container css
 #main-container {
-    background-color: grey;
+    background-color: $maincontainer;
     height: 100vh !important;
     width: 1372px !important;
-    max-width: 1372px !important;
+    max-width: 80% !important;
+    color: $maintext;
 }
 
 #arrows {
@@ -213,6 +215,37 @@ html {
 .flo-right {
     float: right;
 }
+
+#search-icon{
+    font-size: 14px;
+}
+
+.input-group{
+    border-bottom: 3px solid $spotifygreen;
+    border-left: 3px solid $spotifygreen;
+    border-right: 3px solid $spotifygreen;
+    background-color: $maincontainer;
+
+}
+input[type="text"]{
+    
+    font-size: 14px;
+    font-weight: 300;
+    background-color: $maincontainer;
+    border-radius: 0;
+    border: none;
+    color: $maintext;
+}
+
+.input-group-text{
+    font-family: "Font Awesome 5 Free";
+    font-size: 14px;
+    font-weight: 300;
+    border: none !important;
+    background-color: $maincontainer !important;
+    color: $maintext;
+}
+
 
 //end of main container css
 
