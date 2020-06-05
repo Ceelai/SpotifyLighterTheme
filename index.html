@@ -72,16 +72,42 @@
             <div class="col-6" id="main-container">
                 <div class="row">
                     <div class="col-2">
-                        <i class="fas fa-angle-left flo-left pt-2" id="arrows"></i>
-                        <i class="fas fa-angle-right flo-right pt-2" id="arrows"></i>
+                        <button class="btn"><i class="fas fa-fw fa-angle-left flo-left pt-2" id="arrows"></i></button>
+                        <button class="btn"><i class="fas fa-fw fa-angle-right flo-right pt-2" id="arrows"></i></button>
                     </div>
-                    <div class="col-10 pt-2">
+                    <div class="col-10 pt-3">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">&#xf002;</span>
                             </div>
                             <input type="text" class="form-control" placeholder="Search">
                         </div>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-1">
+                        <button class="btn"><i class="fas fa-fw fa-angle-left flo-left pt-2" id="arrows"></i></button>
+                    </div>
+                    <div class="col-10">
+                        <div id="row-label">
+                            Favourite Albums
+                        </div>
+                        <div id="row-description">
+                            Albums you have listen to a lot
+                        </div>
+
+                        <div class="card album-card">
+                            <img class="card-img-top" src="images/musicicon.png" alt="album image">
+                            
+                                <p class="card-text text-left info-fix" id="row-label">Album 1</p>
+                                <p class="card-text text-left info-fix desc-fix" id="row-description">Artist Name</p>
+                            
+                        </div>
+                        <div class="card pl-4">
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button class="btn"><i class="fas fa-fw fa-angle-right flo-right pt-2" id="arrows"></i></button>
                     </div>
                 </div>
             </div>

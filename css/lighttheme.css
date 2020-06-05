@@ -6146,11 +6146,12 @@ html {
   height: 100vh !important;
   width: 1372px !important;
   max-width: 80% !important;
-  color: #4d4d4d;
+  color: #4d4d4d !important;
 }
 
 #arrows {
   font-size: 40px;
+  color: #4d4d4d;
 }
 
 .flo-left {
@@ -6188,6 +6189,40 @@ input[type=text] {
   border: none !important;
   background-color: #f9f9f9 !important;
   color: #4d4d4d;
+}
+
+.fa-fw {
+  width: 0.9em;
+}
+
+#row-label {
+  font-size: 28;
+  font-weight: bold;
+}
+
+#row-description {
+  font-size: 20;
+  font-weight: 300;
+}
+
+.card {
+  border: none !important;
+  background-color: transparent !important;
+  background-clip: none;
+}
+
+.card-img-top {
+  background-position: center;
+  border: 1px solid #4d4d4d !important;
+  width: 128px !important;
+  height: 128px;
+}
+
+.info-fix {
+  margin-bottom: 0 !important;
+}
+.info-fix .desc-fix {
+  font-weight: 400;
 }
 
 #right-column {

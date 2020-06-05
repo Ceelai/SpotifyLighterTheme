@@ -201,11 +201,12 @@ html {
     height: 100vh !important;
     width: 1372px !important;
     max-width: 80% !important;
-    color: $maintext;
+    color: $maintext !important;
 }
 
 #arrows {
     font-size: 40px;
+    color: $maintext;
 }
 
 .flo-left {
@@ -246,6 +247,41 @@ input[type="text"]{
     color: $maintext;
 }
 
+.fa-fw{
+    width: .9em;
+}
+
+#row-label{
+    font-size: 28;
+    font-weight: bold;
+}
+
+#row-description{
+    font-size: 20;
+    font-weight: 300;
+}
+
+.card{
+    
+    border: none !important;
+    background-color: transparent !important;
+    background-clip: none;
+}
+
+.card-img-top{
+    background-position: center;
+    border: 1px solid $maintext !important;
+    width: 128px !important;
+    height: 128px;
+}
+
+.info-fix{
+    margin-bottom: 0 !important;
+
+    .desc-fix{
+        font-weight: 400;
+    }
+}
 
 //end of main container css
 
