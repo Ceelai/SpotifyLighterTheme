@@ -55,6 +55,10 @@ html {
     margin: 0%;
 }
 
+.col {
+    min-width: none !important;
+}
+
 .container {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -200,7 +204,7 @@ html {
     background-color: $maincontainer;
     height: 100vh !important;
     width: 1372px !important;
-    max-width: 80% !important;
+    max-width: 100% !important;
     color: $maintext !important;
 }
 
@@ -217,19 +221,17 @@ html {
     float: right;
 }
 
-#search-icon{
+#search-icon {
     font-size: 14px;
 }
 
-.input-group{
+.input-group {
     border-bottom: 3px solid $spotifygreen;
     border-left: 3px solid $spotifygreen;
     border-right: 3px solid $spotifygreen;
     background-color: $maincontainer;
-
 }
-input[type="text"]{
-    
+input[type="text"] {
     font-size: 14px;
     font-weight: 300;
     background-color: $maincontainer;
@@ -238,7 +240,7 @@ input[type="text"]{
     color: $maintext;
 }
 
-.input-group-text{
+.input-group-text {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
     font-weight: 300;
@@ -247,42 +249,44 @@ input[type="text"]{
     color: $maintext;
 }
 
-.fa-fw{
-    width: .9em;
+.fa-fw {
+    width: 0.9em;
 }
 
-#row-label{
-    font-size: 28;
-    font-weight: bold;
-}
+.title {
+    color: $maintext;
+    #row-label{
+        font-size: 20px;
+    }
 
-#row-description{
-    font-size: 20;
-    font-weight: 300;
+    #row-description{
+        margin-bottom: 0;
+    }
 }
-
-.card{
-    
+.card {
     border: none !important;
     background-color: transparent !important;
     background-clip: none;
 }
 
-.card-img-top{
+.card-img-top {
     background-position: center;
     border: 1px solid $maintext !important;
     width: 128px !important;
     height: 128px;
 }
 
-.info-fix{
+.info-fix {
     margin-bottom: 0 !important;
 
-    .desc-fix{
+    .desc-fix {
         font-weight: 400;
     }
 }
 
+.form-control {
+    padding: 0rem 0rem !important;
+}
 //end of main container css
 
 //start of right column css
@@ -291,7 +295,7 @@ input[type="text"]{
     height: 100vh !important;
     max-width: 273px !important;
     background-color: $rightcolumn;
- 
+
     color: rgb(224, 224, 224);
     max-height: 100% !important;
     border-bottom: 1px solid $maincontainer;

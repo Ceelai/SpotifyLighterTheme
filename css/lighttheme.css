@@ -6020,6 +6020,10 @@ html {
   margin: 0%;
 }
 
+.col {
+  min-width: none !important;
+}
+
 .container {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -6145,7 +6149,7 @@ html {
   background-color: #f9f9f9;
   height: 100vh !important;
   width: 1372px !important;
-  max-width: 80% !important;
+  max-width: 100% !important;
   color: #4d4d4d !important;
 }
 
@@ -6195,14 +6199,14 @@ input[type=text] {
   width: 0.9em;
 }
 
-#row-label {
-  font-size: 28;
-  font-weight: bold;
+.title {
+  color: #4d4d4d;
 }
-
-#row-description {
-  font-size: 20;
-  font-weight: 300;
+.title #row-label {
+  font-size: 20px;
+}
+.title #row-description {
+  margin-bottom: 0;
 }
 
 .card {
@@ -6223,6 +6227,10 @@ input[type=text] {
 }
 .info-fix .desc-fix {
   font-weight: 400;
+}
+
+.form-control {
+  padding: 0rem 0rem !important;
 }
 
 #right-column {
